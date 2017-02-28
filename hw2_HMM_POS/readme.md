@@ -4,16 +4,19 @@ usage:
 
 > python HMM_POS.py [-h][-lambda SMOOTH] [-k K] training_path test_path test_truth_path
 
-
 positional arguments:
 ​		training_path    the training file path for HMM POS
+
 ​		test_path        the test file path for HMM POS, no tags
+
 ​		test_truth_path  the test thruth file path for HMM POS
 
 optional arguments:
 
 ​		-h, --help       show this help message and exit
+
 ​		-lambda SMOOTH   smooth parameter
+
 ​		-k K             hwo many result want to output, other wise obly report accuracy
 
 Example:
