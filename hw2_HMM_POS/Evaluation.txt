@@ -1,0 +1,88 @@
+By comparing the generated tag with real tag, we found, given smooth parameter lambda = 0.5, the accuracy is 0.933322202659. Given smooth parameter lambda = 1.0, the accuracy is 0.936942201445.
+
+
+
+lambda = 1
+1
+The DT Arizona NNP UNKA NNP Commission NNP authorized VBD an DT 11.5 CD % NN rate NN increase NN at IN Tucson NNP Electric NNP Power NNP Co. NNP , , substantially RB lower JJR than IN recommended JJ last JJ month NN by IN a DT commission NN hearing NN officer NN and CC barely RB half PDT the DT rise NN sought VBN by IN the DT utility NN . . logodds: -252.121019141
+2
+The DT ruling NN follows VBZ a DT host NN of IN problems NNS at IN Tucson NNP Electric NNP , , including VBG major JJ write-downs NNS , , a DT 60 CD % NN slash VB in IN the DT common JJ stock NN dividend NN and CC the DT departure NN of IN former JJ Chairman NNP UNKA NNP UNKA NNP during IN a DT company NN investigation NN of IN his PRP$ stock NN sales NNS . . logodds: -246.4948917
+3
+The DT Arizona NNP regulatory JJ ruling NN calls VBZ for IN $ $ 42 CD million CD in IN added JJ revenue NN yearly JJ , , compared VBN with IN a DT $ $ 57 CD million CD boost NN proposed VBN by IN the DT commission NN hearing NN officer NN . . logodds: -186.574821495
+4
+The DT company NN had VBD sought VBN increases NNS totaling VBG $ $ UNKA CD million CD , , or CC 22 CD % NN . . logodds: -77.1226684194
+5
+The DT decision NN was VBD announced VBN after IN trading NN ended VBD . . logodds: -48.4946571389
+6
+Tucson NNP Electric NNP closed VBD at IN $ $ UNKA CD a DT share NN , , down RB 25 CD cents NNS , , in IN New NNP York NNP Stock NNP Exchange NNP composite JJ trading NN . .
+logodds: -121.545802812
+7
+A DT Tucson NNP Electric NNP spokesman NN said VBD the DT utility NN was VBD disappointed VBN by IN the DT commission NN 's POS decision NN and CC `` `` concerned VBN about IN the DT financial JJ integrity NN of IN the DT company NN . . logodds: -145.931252767
+8
+South NNP Korean NNP President NNP UNKA NNP UNKA NNP UNKA NNP , , UNKA VBG aside RP suggestions NNS that IN the DT won VBD be VB UNKA VBN again RB , , said VBD the DT currency NN 's POS current JJ level NN against IN the DT dollar NN is VBZ `` `` appropriate JJ . . '' '' logodds: -179.062918111
+9
+His PRP$ comments NNS , , made VBN in IN response NN to TO reporters NNS ' POS questions NNS at IN the DT National NNP Press NNP Club NNP here RB , , signaled VBD that IN Seoul NNP is VBZ UNKA NNP U.S. NNP pressure NN for IN a DT further JJ rise NN in IN the DT currency NN 's POS value NN . . logodds: -215.161822948
+10
+The DT U.S. NNP wants VBZ a DT higher JJR won VBD to TO make VB South NNP Korea NNP 's POS exports NNS more RBR expensive JJ and CC help VB trim JJ Seoul NNP 's POS trade NN surplus NN . . logodds: -153.963497137
+11
+Many JJ South JJ Korean JJ business NN people NNS want VBP a DT devaluation NN instead RB , , arguing VBG that IN the DT won NNS 's POS recent JJ gains NNS already RB have VBP weakened VBN the DT country NN 's POS export NN performance NN . . logodds: -182.480574099
+12
+Mr. NNP UNKA NNP also RB said VBD South NNP Korea NNP is VBZ taking VBG steps NNS that WDT would MD free VB the DT won VBN to TO respond VB to TO market NN forces NNS . . logodds: -122.5095454
+13
+Seoul NNP has VBZ pointed VBN to TO its PRP$ lack NN of IN a DT foreign JJ exchange NN market NN as IN one CD reason NN the DT won NNS 's POS value NN remains VBZ heavily RB controlled VBN . . logodds: -146.337118062
+14
+Mr. NNP UNKA NNP said VBD a DT U.S. NNP demand NN for IN the DT removal NN of IN South JJ Korean JJ import NN quotas NNS on IN beef NN will MD be VB resolved VBN `` `` UNKA JJ '' '' but CC gave VBD no DT UNKA NN when WRB that WDT will MD happen VB . . logodds: -192.540937007
+15
+UNKA NNP to TO a DT joint JJ meeting NN of IN Congress NNP earlier RBR , , he PRP said VBD South NNP Korea NNP ca MD n't RB move VB quickly RB on IN such JJ agricultural JJ trade NN issues NNS `` `` without IN causing VBG political JJ and CC social JJ UNKA NN . . logodds: -194.587288546
+16
+Great NNP American NNP Bank NNP said VBD its PRP$ board NN approved VBD the DT formation NN of IN a DT holding NN company NN enabling VBG the DT savings NN bank NN to TO pursue VB UNKA JJ banking NN activities NNS under IN a DT new JJ federal JJ law NN . . logodds: -175.8699391
+17
+The DT proposed JJ holding NN company NN 's POS primary JJ purpose NN would MD be VB to TO allow VB Great NNP American NNP to TO continue VB engaging VBG in IN real JJ estate NN development NN activities NNS , , it PRP said VBD . . logodds: -156.649497209
+18
+Those DT activities NNS generated VBD $ $ UNKA CD million CD in IN operating VBG profit NN last JJ year NN . . logodds: -74.4569441811
+19
+But CC according VBG to TO Great NNP American NNP , , such JJ profits NNS do VBP n't RB count VB toward IN meeting VBG the DT San NNP Diego NNP savings NN bank NN 's POS new JJ capitalization NN requirements NNS under IN 1989 CD federal JJ law NN . . logodds: -189.568964601
+20
+The DT new JJ real JJ estate NN unit NN would MD have VB a DT separate JJ capital NN structure NN to TO comply VB with IN the DT law NN . . logodds: -97.0192175446
+
+lambda = 0.5
+1
+The DT Arizona NNP UNKA NNP Commission NNP authorized VBD an DT 11.5 CD % NN rate NN increase NN at IN Tucson NNP Electric NNP Power NNP Co. NNP , , substantially RB lower JJR than IN recommended VBD last JJ month NN by IN a DT commission NN hearing NN officer NN and CC barely RB half PDT the DT rise NN sought VBN by IN the DT utility NN . . logodds: -262.60066493
+2
+The DT ruling NN follows VBZ a DT host NN of IN problems NNS at IN Tucson NNP Electric NNP , , including VBG major JJ write-downs NNS , , a DT 60 CD % NN slash VB in IN the DT common JJ stock NN dividend NN and CC the DT departure NN of IN former JJ Chairman NNP UNKA NNP UNKA NNP during IN a DT company NN investigation NN of IN his PRP$ stock NN sales NNS . . logodds: -255.102104851
+3
+The DT Arizona NNP regulatory JJ ruling NN calls VBZ for IN $ $ 42 CD million CD in IN added VBD revenue NN yearly JJ , , compared VBN with IN a DT $ $ 57 CD million CD boost VB proposed VBN by IN the DT commission NN hearing NN officer NN . . logodds: -188.592789223
+4
+The DT company NN had VBD sought VBN increases NNS totaling VBG $ $ UNKA CD million CD , , or CC 22 CD % NN . . logodds: -81.5368608765
+5
+The DT decision NN was VBD announced VBN after IN trading NN ended VBD . . logodds: -51.3177506999
+6
+Tucson NNP Electric NNP closed VBD at IN $ $ UNKA CD a DT share NN , , down RB 25 CD cents NNS , , in IN New NNP York NNP Stock NNP Exchange NNP composite JJ trading NN . . logodds: -126.568525664
+7
+A DT Tucson NNP Electric NNP spokesman NN said VBD the DT utility NN was VBD disappointed VBN by IN the DT commission NN 's POS decision NN and CC `` `` concerned VBN about IN the DT financial JJ integrity NN of IN the DT company NN . . logodds: -154.044579039
+8
+South NNP Korean NNP President NNP UNKA NNP UNKA NNP UNKA NNP , , UNKA VBG aside RP suggestions NNS that IN the DT won VBD be VB UNKA NNP again RB , , said VBD the DT currency NN 's POS current JJ level NN against IN the DT dollar NN is VBZ `` `` appropriate JJ . . '' '' logodds: -186.179007987
+9
+His PRP$ comments NNS , , made VBN in IN response NN to TO reporters NNS ' POS questions NNS at IN the DT National NNP Press NNP Club NNP here RB , , signaled VBD that IN Seoul NNP is VBZ UNKA NNP U.S. NNP pressure NN for IN a DT further JJ rise NN in IN the DT currency NN 's POS value NN . . logodds: -222.903326043
+10
+The DT U.S. NNP wants VBZ a DT higher JJR won VBD to TO make VB South NNP Korea NNP 's POS exports NNS more RBR expensive JJ and CC help VB trim VB Seoul NNP 's POS trade NN surplus NN . . logodds: -156.139631321
+11
+Many JJ South NNP Korean JJ business NN people NNS want VBP a DT devaluation NN instead RB , , arguing VBG that IN the DT won VBD 's POS recent JJ gains NNS already RB have VBP weakened VBN the DT country NN 's POS export NN performance NN . . logodds: -185.766852179
+12
+Mr. NNP UNKA NNP also RB said VBD South NNP Korea NNP is VBZ taking VBG steps NNS that WDT would MD free VB the DT won VBD to TO respond VB to TO market NN forces NNS . . logodds: -126.705850817
+13
+Seoul NNP has VBZ pointed VBN to TO its PRP$ lack NN of IN a DT foreign JJ exchange NN market NN as IN one CD reason NN the DT won VBD 's POS value NN remains VBZ heavily RB controlled VBN . . logodds: -148.987913494
+14
+Mr. NNP UNKA NNP said VBD a DT U.S. NNP demand NN for IN the DT removal NN of IN South NNP Korean JJ import NN quotas NNS on IN beef NN will MD be VB resolved VBN `` `` UNKA JJ '' '' but CC gave VBD no DT UNKA NN when WRB that WDT will MD happen VB . . logodds: -197.344233055
+15
+UNKA NNP to TO a DT joint JJ meeting NN of IN Congress NNP earlier RBR , , he PRP said VBD South NNP Korea NNP ca MD n't RB move VB quickly RB on IN such JJ agricultural JJ trade NN issues NNS `` `` without IN causing VBG political JJ and CC social JJ UNKA NN . . logodds: -198.908038461
+16
+Great NNP American NNP Bank NNP said VBD its PRP$ board NN approved VBD the DT formation NN of IN a DT holding VBG company NN enabling VBG the DT savings NNS bank NN to TO pursue VB UNKA JJ banking NN activities NNS under IN a DT new JJ federal JJ law NN . . logodds: -184.223436977
+17
+The DT proposed VBN holding VBG company NN 's POS primary JJ purpose NN would MD be VB to TO allow VB Great NNP American NNP to TO continue VB engaging VBG in IN real JJ estate NN development NN activities NNS , , it PRP said VBD . . logodds: -162.562521744
+18
+Those DT activities NNS generated VBD $ $ UNKA CD million CD in IN operating VBG profit NN last JJ year NN . . logodds: -77.0848434485
+19
+But CC according VBG to TO Great NNP American NNP , , such JJ profits NNS do VBP n't RB count VB toward IN meeting NN the DT San NNP Diego NNP savings NNS bank NN 's POS new JJ capitalization NN requirements NNS under IN 1989 CD federal JJ law NN . . logodds: -194.768995782
+20
+The DT new JJ real JJ estate NN unit NN would MD have VB a DT separate JJ capital NN structure NN to TO comply VB with IN the DT law NN . . logodds: -103.339098038

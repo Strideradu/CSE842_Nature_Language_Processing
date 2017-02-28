@@ -20,7 +20,7 @@ class HMM(object):
         self.reverse_tag_dict = None
         self.word_index = None
 
-    def estimate(self, pos_train, smooth = 1):
+    def estimate(self, word_list, tag_list, smooth = 1.0):
         """
 
         :param pos_train: list of senstences with tag
@@ -28,7 +28,7 @@ class HMM(object):
         :return:
         """
 
-        states_count, word_dict = self._record_count(pos_train)
+        states_count, word_dict = self._record_count(word_list, tag_list)
 
         state_sum = np.sum(states_count, axis=1)
         total = np.sum(states_count)
@@ -36,9 +36,10 @@ class HMM(object):
         self._fill_emission(word_dict, state_sum)
 
         self._fill_transimission(states_count, state_sum, total, smooth)
+        print "Parameter estimation finished"
 
 
-    def _record_count(self, pos_train):
+    def _record_count(self, parsed_word, parsed_tag):
         """
         recording the count of
         :param pos_train:
@@ -52,26 +53,27 @@ class HMM(object):
         word_dict = {}
 
 
-        for line in pos_train:
-            line_tag = line.split()
+        for x in range(len(parsed_word)):
+            line_word = parsed_word[x]
+            line_tag = parsed_tag[x]
             # print line_tag
             prev_state_i = 0
-            for i in range(len(line_tag)/2):
+            for i in range(len(line_word)):
 
-                state_i = self.tag_dict.get(line_tag[2*i + 1], None)
+                state_i = self.tag_dict.get(line_tag[i], None)
 
                 # no state found in dict, initialize this state
                 if state_i is None:
                     state_i = len(self.tag_dict)
-                    self.tag_dict[line_tag[2*i + 1]] = state_i
-                    self.reverse_tag_dict[state_i] = line_tag[2*i + 1]
+                    self.tag_dict[line_tag[i]] = state_i
+                    self.reverse_tag_dict[state_i] = line_tag[i]
 
                 states_count[prev_state_i][state_i] += 1
 
-                word_tbl = word_dict.get(line_tag[2 * i], None)
+                word_tbl = word_dict.get(line_word[i], None)
                 if word_tbl is None:
-                    word_dict[line_tag[2 * i]] = np.zeros(self.n, dtype=np.int)
-                word_dict[line_tag[2 * i]][state_i] += 1
+                    word_dict[line_word[i]] = np.zeros(self.n, dtype=np.int)
+                word_dict[line_word[i]][state_i] += 1
 
                 prev_state_i = state_i
 
@@ -135,21 +137,47 @@ class HMM(object):
         :param smooth:
         :return:
         """
+        print smooth
 
         for i in range(self.n):
             for j in range(self.n):
                 if state_sum[i] > 0:
-                    self.transition[i][j] = np.log(smooth * float(states_count[i][j])/state_sum[i] + (1-smooth)*float(state_sum[j]/total) )
-
+                    self.transition[i][j] = np.log(smooth * float(states_count[i][j])/state_sum[i] + (1.0-smooth)*float(state_sum[j])/total)
                 else:
-                    self.transition[i][j] = np.log(float(state_sum[j]/total))
+                    self.transition[i][j] = np.log(float(state_sum[j])/total)
 
-        # print self.transition
 
-    def train(self, lines):
-        for line in lines:
+        #print self.transition
+
+    def test(self, words, labels, output_num):
+        total_word = 0
+        right_word = 0
+        length = len(words)
+        output = []
+        log_out = []
+        for i in range(length):
+
+            log_odds, answer = self._viterbi(words[i])
+            ground_truth = labels[i]
+            for j, word in enumerate(answer):
+                if ground_truth[j] == word:
+                    right_word += 1
+            total_word += len(answer)
+
+            if i < output_num:
+                output.append(answer)
+                log_out.append(log_odds)
+
+            if i % int(0.1*length) == 0:
+                print format((float(i)/length), '.2%') + "test finished"
+
+        print "accuracy is " + str(float(right_word)/total_word)
+        return output, log_out
+
+    def infer(self, word_list):
+        for parsed_line in  word_list:
             # print line
-            self._viterbi(line.split())
+            self._viterbi(parsed_line)
 
     def _viterbi(self, word_seq):
         """
@@ -187,8 +215,8 @@ class HMM(object):
         psi_max = -np.inf
         i_max = 0
         for i in xrange(self.n):
-            if (psi_max < delta[- 1][i]):
-                psi_max = delta[ - 1][i]
+            if (psi_max < (delta[- 1][i] + self.transition[i][1])):
+                psi_max = delta[ - 1][i] + self.transition[i][1]
                 i_max = i
         state_result.append(self.reverse_tag_dict[i_max])
 
@@ -197,12 +225,9 @@ class HMM(object):
             i_max = psi[length - i][i_max]
             state_result.append(self.reverse_tag_dict[i_max])
 
-        return state_result[::-1]
+        # print psi_max
+        return psi_max, state_result[::-1]
 
 
 if __name__ == '__main__':
     hmm = HMM()
-    with open("wsj1-18.training") as f:
-        lines = f.readlines()
-        hmm.estimate(lines)
-        hmm.train(["The Arizona UNKA Commission authorized an 11.5 % rate increase at Tucson Electric Power Co. , substantially lower than recommended last month by a commission hearing officer and barely half the rise sought by the utility ."])
