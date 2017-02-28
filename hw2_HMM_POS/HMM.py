@@ -137,8 +137,6 @@ class HMM(object):
         :param smooth:
         :return:
         """
-        print smooth
-
         for i in range(self.n):
             for j in range(self.n):
                 if state_sum[i] > 0:

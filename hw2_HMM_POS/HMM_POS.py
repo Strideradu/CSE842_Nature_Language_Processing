@@ -2,6 +2,8 @@ import HMM
 import argparse
 import sys
 import os
+import warnings
+warnings.filterwarnings('ignore')
 
 class HMM_POS(object):
     def __init__(self, train_path, test_path, test_result):
@@ -10,7 +12,7 @@ class HMM_POS(object):
         self.test_result = test_result
         self.model = HMM.HMM(45)
 
-    def train(self, smooth):
+    def train(self, smooth = 1.0):
         word, tag = self._parse_with_tag(self.train_path)
         self.model.estimate(word, tag, smooth)
 
